@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+#quote-box {
+    background-color: white;
+    width: 700px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+   
+   
+}
+
+#quote-box h1 {
+    margin: 30px auto; 
+    position: relative;
+}
+#quote-box h1::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: #c31432;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+
+#quote-box blockquote {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 30px;
+}
+#quote-box span {
+    float: right;
+    right: 30px;
+    padding: 20px;
+    position: relative;
+}
+#quote-box span::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #c31432;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+}
+
+#quote-box blockquote::before, #quote-box blockquote::after {
+content: '"';
+font-size: 2.3rem;
+}
+
+#quote-box div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#quote-box button {
+background: #c31432;
+color: #fff;
+border-radius: 20px;
+border: 2px solid #c31432;
+width: 150px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+cursor: pointer;
+transition: 0.5s ease;
+}
+
+#quote-box button:hover {
+    transform: scale(1.06);
+    background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: none;
+}
+
+#quote-box a {
+background: #fff;
+color: #000;
+border-radius: 20px;
+border: 2px solid #c31432;
+width: 150px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+text-decoration: none;
+cursor: pointer;
+transition: 0.5s ease;
+}
+
+#quote-box a:hover {
+    transform: scale(1.06);
+}
+
+
+#quote-box a img {
+    width: 50px;
+}
+
+/* media querries */
+
+@media (max-width: 720px) {
+    #quote-box {
+        width: 90%;
+    }
+}

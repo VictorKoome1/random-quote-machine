@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-Quote-Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="quote-box">
+    <h1>Quote Of The Day</h1>
+    <blockquote id="text">Loading...</blockquote>
+    <span id="author">Loading...</span>
+     <div>
+        <button id="new-quote" onclick="fetchData(api_url)">New quote</button>
+        <a href="" onclick="tweet()" id="tweet-quote"><img src="tweet.png" alt="tweet-img">Tweet</a>
+     </div>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
